@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banner1 {
+    width: 100px;
+    height: 100px;
+    margin-left: 30px;
+}
+
+.menuIcon {
+    width: 100px;
+    height: 100px;
+    float: right;
+    margin-top: -109px;
+    margin-left: 1px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background: #333;
+    color: #fff;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+#menu-bar {
+    display: none;
+}
+
+header label {
+    float: right;
+    font-size: 28px;
+    margin: 0 0;
+    cursor: pointer;
+}
+
+.menu {
+    display: none;
+}
+
+.contenido {
+    width: 100%;
+    margin: auto;
+}
+
+/* h1 {
+    float: left;
+}
+
+header .contenido {
+    display: table;
+}
+
+.fondo {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/fondo-prueba.jpeg);
+    background-size: cover;
+}
+.fondo .contec {
+    max-width: 900px;
+    text-align: center;
+}
+
+.fondo .contec h1{
+    font-size: 5em;
+    color: rgb(59, 57, 57);
+}
+.fondo .contec p {
+    font-size: 1em;
+    color: rgb(31, 29, 29);
+} */
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/fondo-prueba.jpeg);
+    background-size: cover;
+}
+.banner .content{
+    max-width: 900px;
+    text-align: center;
+}
+.banner .content p {
+    font-size: 2em;
+    color: rgb(31, 29, 29);
+}
+
+.banner .content h2{
+    font-size: 10em;
+    color: rgb(59, 57, 57;
+}
