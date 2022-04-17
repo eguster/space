@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+/* estilos generales */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+.title{
+    color: black;
+    font-size: 2em;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 60px;
+    font-family: 'Poppins', sans-serif;
+}
+.title span{
+    color: #0051ff;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+/* menus y cabecera */
+header{
+    width: 100%;
+    height: 50px;
+    background: rgba(4, 35, 102, 0.397);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    
+}
+
+.contenedor {
+    width: 98%;
+    margin: auto;
+}
+
+h1{
+    float: left;
+}
+
+header .contenedor{
+    display: table;
+}
+
+#menu-bar{
+    display: none;
+}
+
+header label{
+    float: right;
+    font-size: 28px;
+    margin: 6px 0;
+    cursor: pointer;
+}
+
+.menu{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(4, 35, 102, 0.603);
+    transition: all 0.5s;
+    transform: translateX(-100%);
+}
+
+.menu a{
+    display: block;
+    color: #fff;
+    height: 50px;
+    text-decoration: none;
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.menu a:hover{
+    background: rgba(255, 255, 255, 0.3);
+}
+
+#menu-bar:checked ~ .menu{
+    transform: translateX(0%);
+}
+
+@media (min-width:1024px){
+    .menu{
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translateX(0);
+        float: right;
+        display: flex;
+        background: rgba(4, 35, 102, 0);
+
+    }
+
+    .menu a{
+        border: none;
+    }
+
+    header label{
+        display: none;
+    }
+
+    .contenedor{
+        width: 1300px;
+    }
+}
+
+/* pagina frontal */
+
+.window{
+    width: 100%;
+    height: 1010px;
+    background: #373B44;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(217, 89%, 61%, 0.39), hsla(219, 11%, 24%, 0.39)), url(../imagenes/banner.png);   /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(217, 89%, 61%, 0.39), hsla(219, 11%, 24%, 0.39)), url(../imagenes/banner.png); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.window .text-front{
+    display: flex;
+    height: 710px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.text-front h1{
+    font-size: 60px;
+    color: #fff;
+}
+
+.text-front h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+}
+
+/* Sobre Nosotros */
+
+.content-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.image-nosotros{
+    width: 48%;
+}
+
+.sobre-nosotros .content-text{
+    width: 48%;
+}
+
+.content-text p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.hola{
+    height: 1000px;
+}
+
+@media (max-width:1024px){
+    .sobre-nosotros{
+        width: 90%;
+        margin: auto;
+        overflow: hidden;
+    }
+    .content-sobre-nosotros{
+        position: static;
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .image-nosotros{
+        width: 100%;
+    }
+    
+    p{
+        width: 200%;
+        height: 100%;
+    }
+
+}
+
+/* menu */
