@@ -173,9 +173,6 @@ header label{
     font-size: 20px;
 }
 
-.hola{
-    height: 1000px;
-}
 
 @media (max-width:1024px){
     .sobre-nosotros{
@@ -202,4 +199,4 @@ header label{
 
 }
 
-/* menu */
+/* menu  */
