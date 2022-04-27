@@ -153,6 +153,11 @@ header label{
 
 /* Sobre Nosotros */
 
+.sobre-nosotros{
+    width: 100%;
+    padding: 100px 0 100px 0;
+}
+
 .content-sobre-nosotros{
     display: flex;
     justify-content: space-evenly;
@@ -167,16 +172,20 @@ header label{
 }
 
 .content-text p{
-    padding: 0px 0px 30px 15px;
+    padding: 15% 0px 15% 15px;
+    width: 90%;
     font-weight: 300;
     text-align: justify;
     font-size: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 
 @media (max-width:1024px){
     .sobre-nosotros{
         width: 90%;
+        padding: none;
         margin: auto;
         overflow: hidden;
     }
@@ -192,6 +201,10 @@ header label{
         width: 100%;
     }
     
+    .content-text p{
+        padding: 0 0 0 15px;
+    }
+    
     p{
         width: 200%;
         height: 100%;
@@ -200,3 +213,110 @@ header label{
 }
 
 /* menu  */
+
+.mn {
+    background: #f2f2f2;
+    padding: 49px 0 49px 0;
+}
+
+.seccion-menus{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagenes{
+    width: 26%;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    border-radius: 20px;
+}
+
+
+.imagenes > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.icono {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(209, 100%, 50%, 0.411);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.icono img{
+    width: 200px;
+}
+.icono p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+.icono p a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+
+}
+
+.imagenes:hover .icono{
+    transform: scale(1);
+}
+
+@media (max-width:1024px){
+    .seccion-menus{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .imagenes{
+        width: 50%;
+        overflow: hidden;
+        border-radius: 0;
+
+    }
+    .imagenes > img{
+        object-fit: cover;
+        display: flex;
+        height: 100%;
+        width: 100%;
+    }
+    .icono{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        top: none;
+        transform: none;
+        background: none;
+        transition: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .icon-menus{
+        display: none;
+    }
+
+    .icono p{
+        padding: 5px;
+        font-weight: 300;
+        text-align: center;
+        justify-content: center;
+    }
+
+}
+
