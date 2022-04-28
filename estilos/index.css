@@ -200,9 +200,15 @@ header label{
     .image-nosotros{
         width: 100%;
     }
+    .content-text{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
     
     .content-text p{
-        padding: 0 0 0 15px;
+        width: 200%;
+
     }
     
     p{
@@ -313,9 +319,12 @@ header label{
 
     .icono p{
         padding: 5px;
-        font-weight: 300;
+        font-weight: 200;
         text-align: center;
         justify-content: center;
+    }
+    .icono p a {
+        font-size: 99%;
     }
 
 }
